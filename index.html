@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Moderna - HTML & CSS</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de Estilos CSS Externa -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">⚡</div>
+        <span>Nexus</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#caracteristicas" class="nav-link">Características</a></li>
+        <li><a href="#estadisticas" class="nav-link">Métricas</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+        <a href="#contacto" class="btn-primary">Empezar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>✨ Versión 2.0 Lanzada</span>
+        </div>
+        <h1 class="hero-title">
+          Construye interfaces <span class="gradient-text">increíbles</span> y rápidas.
+        </h1>
+        <p class="hero-subtitle">
+          Una plantilla moderna diseñada con HTML5 y CSS3 limpio. Totalmente responsiva, accesible y fácil de personalizar.
+        </p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn-primary">Probar Gratis</a>
+          <a href="#caracteristicas" class="btn-secondary">Saber más</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="glass-card">
+          <div class="code-preview">
+<pre><code><span style="color: #f43f5e;">const</span> app = {
+  name: <span style="color: #a3e635;">"Nexus UI"</span>,
+  responsive: <span style="color: #fbbf24;">true</span>,
+  speed: <span style="color: #a3e635;">"100/100"</span>
+};
+
+console.log(<span style="color: #a3e635;">"Listo para usar!"</span>);</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="caracteristicas" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Por qué elegirnos?</h2>
+        <p class="section-desc">Diseñado desde cero pensado en el rendimiento y la experiencia del usuario.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Ultra Rápido</h3>
+          <p class="feature-desc">Optimizado para cargar en milisegundos sin peso innecesario de librerías pesadas.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">100% Responsivo</h3>
+          <p class="feature-desc">Se adapta perfectamente a pantallas de escritorio, tablets y dispositivos móviles.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="feature-title">Diseño Moderno</h3>
+          <p class="feature-desc">Estilos limpios con CSS Variables, Flexbox, CSS Grid y soporte para Modo Oscuro/Claro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section id="estadisticas" class="section-padding stats">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">99.9%</div>
+        <div class="stat-label">Tiempo en línea</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">10k+</div>
+        <div class="stat-label">Usuarios activos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">&lt; 100ms</div>
+        <div class="stat-label">Tiempo de respuesta</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contacto" class="section-padding">
+    <div class="container contact-container">
+      <div class="section-header">
+        <h2 class="section-title">Ponte en contacto</h2>
+        <p class="section-desc">¿Tienes preguntas? Envíanos un mensaje y te responderemos pronto.</p>
+      </div>
+
+      <div class="glass-card">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" class="form-input" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" class="form-input" placeholder="tu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" class="form-input" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%;">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Nexus UI. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT INLINE (Para interactividad) -->
+  <script>
+    // Conmutador de Modo Oscuro / Claro
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const htmlElement = document.documentElement;
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      htmlElement.setAttribute('data-theme', newTheme);
+      themeToggleBtn.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+    });
+
+    // Manejo básico del Formulario
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('¡Gracias por tu mensaje! Te responderemos pronto.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
